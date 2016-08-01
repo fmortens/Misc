@@ -39,7 +39,7 @@ perl tictactoe.pl 'xxxyy   y'
 ```
 
 Dependencies
-____________
+------------
 * Mojolicious::Lite
 * Text::CSV_XS
 * URI
