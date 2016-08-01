@@ -31,9 +31,7 @@ foreach my $suit (keys %$tests) {
 
 sub matching {
   my ($direction, $color) = @_;
-
   foreach my $series ( @{ $rules->{$direction} } ) {
-
     my @matches = grep {$_ eq $color} (
       $raw[ $series->[0] ],
       $raw[ $series->[1] ],
