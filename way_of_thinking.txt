@@ -1,0 +1,15 @@
+* How to identify what pages are articles and which are categories etc
+
+I would try to separate them by analyzing both URL and historically if they have been linked or referenced to.
+
+* How would text and sections be extracted from the raw HTML file
+
+There are CPAN modules that I could use to parse the DOM. Author and publication date might be available via meta
+tags, ingress and body would require DOM parsing, maybe some rules for those DOMs not properly structured like
+"First so and so lines are ingress, rest body etc".
+
+* How to store data and make it searchable
+
+Well, ideally in a database. Stored with indexable / searchable fields like date, author, domain, url (minus domain),
+title, ingress and body. Not entirely sure what kind of database engine is the preferred one nowdays, and for whatever
+data size we are talking about here.
