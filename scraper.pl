@@ -11,7 +11,7 @@ my $rows = scraper {
   process 'table[id="indexTable"] script', 'script' => 'HTML';
 };
 
-my $dirty = $rows->scrape( URI->new("http://www.nasdaq.com") )->{script};
+my $dirty = $rows->scrape( URI->new("https://www.nasdaq.com") )->{script};
 
 # Clean the dirty raw data
 ($dirty) = $dirty =~ m/CDATA\[(.*)\/\/\]/xms;

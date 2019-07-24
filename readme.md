@@ -45,3 +45,4 @@ Dependencies
 * URI
 * Web::Scraper
 * XML::Twig
+* Mozilla::CA
